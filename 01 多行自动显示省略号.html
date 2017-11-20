@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            width: 180px;
+            overflow: hidden;
+            /*是display: flex;的旧语法*/
+            display: -webkit-box;
+            /*类似于flex-direction: row;的旧语法*/
+            -webkit-box-orient: vertical;
+            /*控制内容显示几行*/
+            -webkit-line-clamp:3;
+        }
+    </style>
+</head>
+<body>
+<p>
+    ::before ::after 这俩伪元素没有兼容性
+    因为ie浏览器实现的是单冒号 而在css3中把这两个东西归类到了伪元素
+</p>
+
+</body>
+</html>
